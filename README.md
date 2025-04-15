@@ -26,8 +26,9 @@ Plataforma web desenvolvida para o envio, correção e feedback de redações. I
 ## 📸 Imagens do projeto
 
 <p align="center">
-  <img src="screenshots/tela_inicial.png" width="600" alt="Tela inicial">
-  <img src="screenshots/tela_correcao.png" width="600" alt="Tela de correção">
+  <img src="screenshots\Captura de tela 2025-03-12 115558.png" width="600" alt="Tela de Login">
+  <img src="screenshots\Captura de tela 2025-03-12 115941.png" width="600" alt="Tela de temas">
+  <img src="screenshots\Captura de tela 2025-03-12 120351.png" width="600" alt="Tela de redações corrigidas">
 </p>
 
 ---

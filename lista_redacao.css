@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/fundooutrastelas.jpg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+header img {
+    width: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover {
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin-top: 3.5%;
+    margin-left: 40%;
+}
+
+main {
+    color: white;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btn-corrigir {
+    background-color: rgb(196, 196, 24);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.btn-corrigir:hover {
+    background-color: rgb(255, 204, 0);
+}
+
+.no-redacoes, .no-alunos {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 50px;
+}

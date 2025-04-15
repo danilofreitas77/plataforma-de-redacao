@@ -1,0 +1,130 @@
+/* Importando a fonte Open Sauce */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); /* Substitua pela URL do Open Sauce, se houver */
+
+/* Aplicando a fonte globalmente */
+body {
+    margin: 0;
+    font-family: 'Open Sauce', sans-serif; /* Define a fonte padrão */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Centraliza o formulário no eixo vertical */
+    align-items: center; /* Centraliza tudo no eixo horizontal */
+    background-image: linear-gradient(to bottom, rgba(208, 189, 0, 0.5), rgba(208, 189, 0, 0.5)), url(assets/fundologin.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+}
+
+header {
+    margin-bottom: 10px; /* Reduzi o espaçamento entre a logo e o formulário */
+}
+
+header img {
+    width: 120%;
+    height: auto;
+    max-width: 300px; /* Garante que a logo não fique muito grande em telas pequenas */
+    margin-top: -20px; /* Move a logo mais para cima */
+}
+
+form {
+    background-color: #ffff81;
+    width: 400px; /* Largura padrão */
+    max-width: 90%; /* Faz o formulário ocupar até 90% da largura da tela em dispositivos menores */
+    padding: 30px; /* Adiciona mais espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+    text-align: center; /* Centraliza o texto */
+    height: auto; /* Permite que o comprimento do formulário se ajuste ao conteúdo */
+    margin-top: -20px; /* Move o formulário mais para cima */
+}
+
+form h3 {
+    margin-top: -1%;
+    font-size: 35pt;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+form label {
+    display: block;
+    text-align: left; /* Alinha o label à esquerda */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 90%; /* Ocupa quase toda a largura do formulário */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    width: 50%; /* Botão menor */
+    padding: 8px 12px; /* Reduz o espaçamento interno */
+    margin-bottom: 15px;
+    border: 2px solid #000000; /* Contorno */
+    border-radius: 50px; /* Borda bem arredondada */
+    font-size: 14px;
+    background-color: transparent; /* Sem fundo */
+    color: #000000; /* Cor do texto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+form input[type="submit"]:hover {
+    background-color: white; /* Fundo branco ao passar o mouse */
+    color: #000; /* Texto preto */
+}
+
+form a {
+    text-decoration: none;
+    color: #000;
+}
+
+form a p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    form {
+        width: 90%; /* Faz o formulário ocupar quase toda a largura disponível */
+    }
+}
+
+/* Responsividade para telas muito pequenas (como smartphones) */
+@media (max-width: 480px) {
+    header img {
+        width: 90%;
+        max-width: 200px;
+    }
+
+    form {
+        padding: 15px; /* Reduz o espaçamento interno */
+    }
+
+    form h3 {
+        font-size: 18px; /* Diminui o tamanho do título */
+    }
+
+    form label,
+    form input {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    form input[type="submit"] {
+        width: 80%; /* Ajusta o tamanho do botão para telas pequenas */
+        padding: 8px; /* Reduz o espaçamento interno */
+    }
+}

@@ -48,9 +48,14 @@ Plataforma web desenvolvida para o envio, correção e feedback de redações. I
 
 3. Inicie o Apache e o MySQL pelo painel do XAMPP.
 
-4. Crie um banco de dados MySQL chamado plataforma_redacao.
+4. Crie um banco de dados MySQL chamado curso.
 
-5. Importe o banco de dados no phpMyAdmin (o arquivo .sql está na pasta do projeto).
+5. Crie as tabelas: usuarios, temas e redacoes.
 
 6. Acesse no navegador:
 http://localhost/plataforma-de-redacao/
+
+## 👨‍💻 Desenvolvido por
+
+Danilo C. Freitas — Fundador da CodeLine  
+[LinkedIn](www.linkedin.com/in/danilo-freitas-171b58260) • [Instagram](https://www.instagram.com/danilofreitas_dev/)

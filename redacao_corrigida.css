@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+
+body{
+    margin: 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/fundooutrastelas.jpg);
+    background-size: cover;
+    font-family: 'Open Sauce', sans-serif;
+    height: 100vh;
+}
+
+header img{
+    width: 20%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover{
+    transition: 1s;
+    color: rgb(196, 196, 24);
+}
+
+nav{
+    display: flex;
+    width: 30%;
+    margin-top: 3.5%;
+    margin-left: 50%;
+}
+
+main{
+    color: white;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/* ======== CAIXA DA REDAÇÃO CORRIGIDA ======== */
+.redacao-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.redacao-container p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.redacao-container strong {
+    color: #FFD700;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    main {
+        width: 90%;
+    }
+}

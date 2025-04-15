@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+
+body{
+    margin: 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/fundooutrastelas.jpg);
+    background-size: cover;
+    font-family: 'Open Sauce', sans-serif;
+ 
+    background-repeat: repeat;
+}
+
+header img{
+    width: 20%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover{
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    margin-top: 3.5%;
+    margin-left: 40%;
+}
+
+main {
+    color: white;
+    margin: 120px auto 0; /* Ajusta o espaço abaixo do header */
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Estilizando os cards */
+.redacao-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h2, h3 {
+    color: #ffcc00;
+}
+
+.btn-download, .btn-enviar {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-download:hover, .btn-enviar:hover {
+    background-color: #e6b800;
+}
+
+/* Inputs de nota */
+.nota {
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Campo de Comentário */
+.comentario {
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffcc00;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+}

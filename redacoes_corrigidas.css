@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+
+body{
+    margin: 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/fundooutrastelas.jpg);
+    background-size: cover;
+    font-family: 'Open Sauce', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img{
+    width: 20%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover{
+    transition: 1s;
+    color: rgb(196, 196, 24);
+}
+
+nav{
+    display: flex;
+    width: 30%;
+    margin-top: 3.5%;
+    margin-left: 50%;
+
+}
+
+
+main {
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ======== LISTA DE REDAÇÕES ======== */
+.lista-redacoes {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redacao-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.redacao-item strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.redacao-item small {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.redacao-item:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.btn-detalhes {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: rgb(196, 196, 24);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.btn-detalhes:hover {
+    background-color: rgb(5, 5, 5);
+    color: white;
+    transition: 2s;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+
+body{
+    margin: 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/fundooutrastelas.jpg);
+    background-size: cover;
+    font-family: 'Open Sauce', sans-serif;
+    height: 100vh;
+}
+
+header img{
+    width: 20%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover{
+    transition: 1s;
+    color: rgb(196, 196, 24);
+}
+
+nav{
+    display: flex;
+    width: 30%;
+    margin-top: 3.5%;
+    margin-left: 50%;
+}
+
+main{
+    color: white;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+p{
+    font-size: 20pt;
+    width: 20%;
+}
+
+.temas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tema-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.tema-box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.data-tema {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.btn-escrever {
+    display: inline-block;
+    background-color: #FFD700;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-escrever:hover {
+    background-color: #fdf1ac;
+}
+
+h2{
+    padding-top: -100%;
+}

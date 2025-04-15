@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+
+body{
+    margin: 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/colagem\ de\ fotos.png);
+    background-size: cover;
+    font-family: 'Open Sauce', sans-serif;
+    height: 100vh;
+}
+
+header img{
+    width: 20%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover{
+    transition: 1s;
+    color: rgb(196, 196, 24);
+}
+
+nav{
+    display: flex;
+    width: 30%;
+    margin-top: 3.5%;
+    margin-left: 50%;
+}
+
+main{
+    color: white;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+p{
+    font-size: 20pt;
+    width: 20%;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/fundooutrastelas.jpg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+header img {
+    width: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    font-size: 15pt;
+}
+
+a:hover {
+    transition: 1s;
+    color: rgb(196, 196, 24);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin-top: 3.5%;
+    margin-left: 40%;
+}
+
+main {
+    color: white;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+/* Estilos para os cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 30px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    background: linear-gradient(145deg, rgba(45, 45, 45, 0.9), rgba(30, 30, 30, 0.8));
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 24pt;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7), 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btn-acessar {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-acessar:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Efeito de aumento no botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .card {
+        width: 90%;
+    }
+}
